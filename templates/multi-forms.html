@@ -1,0 +1,25 @@
+<div class="col">
+    <div class="form-group">
+    <h1> Welcome </h1>
+
+    <form method="POST" action={{url_for('generate')}}>
+        <h2>Generate GAME ID</h2>
+        <div>
+                <p>Input your name </p>
+                <label for="name">Name</label>
+                <input name="name" type="text" />
+            </div>
+		<div>
+                <button type="submit">Generate GAME ID</button>
+            </div>
+
+    <h3>If you already have your game ID enter here</h3>
+    </form>
+
+    <form method="POST" action={{url_for('start')}}>
+
+        <input name="name", id='name', placeholder="enter your name">
+        <input name="gameID", id='gameID', placeholder="enter game id">
+        <input type="submit" value="Submit">
+    </form>
+  </div>

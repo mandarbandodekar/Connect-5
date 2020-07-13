@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Send your values </title>
+</head>
+<body>
+	<h2>Please put your values</h2>
+	<form method="post">
+        <!-- looping all the lists individually for pretty printing-->
+		{% for your_list_element in your_list %}
+		<p>{{ your_list_element }} </p>
+        {% endfor %}
+        <div>
+            <h3>{{error_message}} </h3>
+            </div>
+		<div>
+            <h2> Waiting for the other player to make the move </h2>
+            <p> Check if other player has played</p>
+            <a href="{{ url_for('game_state',gameID=gameID) }}">  'Check here'
+		</div>
+    </br>
+    </br>
+        <div>
+                <a href="{{ url_for('quit',gameID=gameID) }}">  'Quit Game' </a>
+        </div>
+	</form>
+</body>
+</html>

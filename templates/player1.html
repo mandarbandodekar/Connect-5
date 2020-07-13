@@ -1,0 +1,11 @@
+<!doctype html>
+<h1>Hello {{name}}</h1>
+    <div>
+            <h1>Your game ID is {{gameID}}</h1>
+            <h2> Please give it to your friend to join the game </h2>
+    </div>
+    
+<div>
+    <h4> To go the Game Page >>>. 
+    <a href="{{ url_for('game_state',gameID=gameID) }}">  'Click here' </a>
+</div>
