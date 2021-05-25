@@ -102,5 +102,4 @@ Players also get unique ID's.
     'game_winner': 'player1',
     'game_loser': 'player2', 'column_blocks': []}
 
-
     ```
